@@ -3,6 +3,9 @@ li {
 	margin-top: 40px;
 	float: left;
 }
+.navigation {
+	margin-left: 300px;
+}
 a {
 	position: relative;
 	padding: 5px;
@@ -27,22 +30,116 @@ a:hover:after {
 body {
 	position: relative;
 }
-header {
-	position: relative;
-	z-index: 1px;
-}
 .logo {
 	width: 100px;
 	float: left;
+	margin-left: 50px;
 }
-.space {
-	float: right;
-	width: 1245px;
+.computer {
+	width: 600px;
 	position: absolute;
-	top:0;
-	left:100px;
+	top: 100px;
+	right: 150px;
+	z-index: 1px;
 }
-.rocket {
-	float: right;
-	height: 100px;
+.diagram1 {
+	width: 80px;
+	position: absolute;
+	top: 350px;
+	right: 180px; 
+	animation: myanimation 5s linear;
+}
+.icon1 {
+	position: absolute;
+	right: 200px;
+	width: 150px;
+	top: 150px;
+	animation: mysecondanimation 5s linear;
+}
+.termometre {
+	position: absolute;
+	right: 270px;
+	width: 65px;
+	top:450px;
+	animation: mythirdanimation 5s linear;
+}
+.icon2 {
+	position: absolute;
+	right: 350px;
+	top: 560px;
+	animation: myfourthanimation 5s linear;
+	width: 150px;
+}
+.convert {
+	position: absolute;
+	top: 430px;
+	right: 540px;
+	width: 200px;
+	animation: myfifthanimation 5s linear;
+}
+.diagram2 {
+	position: absolute;
+	top: 220px;
+	width: 160px;
+	right: 690px;
+	animation: mysixthanimation 5s linear;
+}
+.icon3 {
+	position: absolute;
+	top: 167px;
+	right: 650px;
+	width: 50px;
+	animation: myseventhanimation 5s linear;
+}
+.title {
+	position: absolute;
+	top: 200px;
+	left: 50px;
+	width: 100px;
+	font-size: 50px;
+	color: #4C5AFB;
+	font-family: "DejaVu Sans Bold", sans-serif;
+	animation: titlemove 5s linear;
+}
+.title1 {
+	position: absolute;
+	top: 310px;
+	left: 50px;
+	width: 50px;
+	font-size: 50px;
+	color: #4C5AFB;
+	font-family: "DejaVu Sans Bold", sans-serif;
+	animation: titlemove 5s linear;
+}
+@keyframes myanimation {
+	from {top: 0px;}
+	to {top: 350px;}
+}
+@keyframes mysecondanimation {
+	from {top:0px;}
+	to {top:150px;}
+}
+@keyframes mythirdanimation {
+	from {opacity: 0%;}
+	to {opacity: 100%; }
+}
+@keyframes myfourthanimation {
+	from {right: 0px;}
+	to {right: 350px;}
+}
+@keyframes myfifthanimation {
+	from {opacity: 0%;}
+	to {opacity: 100%;}
+}
+@keyframes mysixthanimation {
+	from {top: 0px}
+	to {top: 220px;}
+}
+@keyframes myseventhanimation {
+	from {top: 0px;}
+	to {top: 167px;}
+}
+@keyframes titlemove {
+	from {opacity: 0%;}
+	to {opacity: 100%;}
 }
