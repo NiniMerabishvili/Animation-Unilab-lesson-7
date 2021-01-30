@@ -1,0 +1,48 @@
+li {
+	margin-left: 20px;
+	margin-top: 40px;
+	float: left;
+}
+a {
+	position: relative;
+	padding: 5px;
+	color: #3F369A;
+	font-size: 16px;
+	font-family: "DejaVu Sans Bold", sans-serif;
+	transition: all 1s linear;
+}
+a::after {
+	content:'';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #ffa902;
+	height: 2px;
+	width: 0;
+	transition: all 0.5s linear;
+}
+a:hover:after {
+	width: 100%;
+}
+body {
+	position: relative;
+}
+header {
+	position: relative;
+	z-index: 1px;
+}
+.logo {
+	width: 100px;
+	float: left;
+}
+.space {
+	float: right;
+	width: 1245px;
+	position: absolute;
+	top:0;
+	left:100px;
+}
+.rocket {
+	float: right;
+	height: 100px;
+}
